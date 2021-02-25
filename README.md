@@ -8,6 +8,10 @@ db.user: el nombre de usuario de la db
 db.password: la contraseña de la db
 db.database: el nombre de la base de datos
 
+## Creacion de la base de datos
+
+Para crear la base de datos utilizada por el servidor, se puede utilizar el query ubicado en models/dbsql.sql
+
 ## Descargar dependencias
 
 Se debe utilizar el comando npm install en la consola en el directorio del proyecto
