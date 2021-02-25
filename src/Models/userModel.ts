@@ -2,7 +2,7 @@ const {db, insertRow, userTable} = require('../Models/db');
 const {queries} = require('../util/queries');
 const humps = require('humps');
 
-
+//Verifica que el usuario exista
 const checkUser = (user: any) => {
         return db.one(queries.SELECT_USER(user.googleId))
         .then((r: any)=>{
@@ -13,6 +13,7 @@ const checkUser = (user: any) => {
         });
 }
 
+//Registra al usuario
 const registerUser = (user: any) => {
     const query = insertRow(humps.decamelizeKeys(user), userTable);
     return db.none(query)

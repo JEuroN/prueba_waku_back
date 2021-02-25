@@ -5,7 +5,11 @@ const checkToken = require('../util/checkToken');
 export const login = async (req: Request, res: Response) => {
     const userProfile = req.body.data;
     const {Authorize} = req.body.headers;
+
+    //Verifica si el token existe y la duracion del token
     const token = await checkToken(Authorize);
+
+    //Si el token es valido y la cuenta es correcta lo busca en la base de datos, si no esta, lo registra
     if(token.sub === userProfile.googleId && token.isExpired === false){
         let userAcc = await checkUser(userProfile)
         if(userAcc===false){

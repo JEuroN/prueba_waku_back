@@ -1,5 +1,4 @@
 const config = {
-    apiKey:'8fab3387-2c85-41e2-9677-148f9debde90',
     port: 8000,
     db: {
         host: 'localhost',
@@ -9,4 +8,9 @@ const config = {
         password: 'admin'
     }
 }
+
+/* 
+port es el puerto en el que se desea colocar el servidor de express
+db contiene toda la informacion para la conexion a la db
+*/
 export = config;
