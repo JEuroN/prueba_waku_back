@@ -18,4 +18,10 @@ Se debe utilizar el comando npm install en la consola en el directorio del proye
 
 ## Ejecutar el servidor
 
-Se utiliza el comando node en la consola en el directorio del proyecto
+Existen 3 comandos
+
+build: Para compilar el proyecto en javascript en la carpeta /build
+
+init: Para ejecutar el servidor una vez haya sido compilado
+
+Start: Para compilar y posteriormente ejecutar el servidor 
