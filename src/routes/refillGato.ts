@@ -1,5 +1,5 @@
 import {Request, Response} from 'express';
-const {saveGato, searchGato, mapResult, deleteGatos} = require('../Models/gatoModel')
+const {saveGato, searchGato, mapResult} = require('../Models/gatoModel')
 const {getGatos, searchGatosByBreed, searchGatosByCategory} = require('../util/getGatos');
 
 

@@ -1,5 +1,5 @@
 import express = require('express');
-import config = require('./config');
+const config = require('./config');
 import bodyParser = require('body-parser');
 import {login} from './routes/login';
 import {catPost} from './routes/catPost';
@@ -26,6 +26,6 @@ router.use('/login', login);
 router.use('/dash', catPost);
 router.use('/getGatos', refillGato);
 
-app.listen(config.port, ()=>{
-    console.log(`Conectado al puerto ${config.port}`); 
+app.listen(config.default.port, ()=>{
+    console.log(`Conectado al puerto ${config.default.port}`); 
 })

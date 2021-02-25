@@ -13,4 +13,4 @@ const config = {
 port es el puerto en el que se desea colocar el servidor de express
 db contiene toda la informacion para la conexion a la db
 */
-export = config;
+export default config;

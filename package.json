@@ -2,9 +2,11 @@
   "name": "prueba_waku_back",
   "version": "1.0.0",
   "description": "Componente back para la prueba diagnostico de waku",
-  "main": "src/index.ts",
+  "main": "/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "init": "node build/index.js",
+    "start": "tsc && node build/index.js"
   },
   "repository": {
     "type": "git",

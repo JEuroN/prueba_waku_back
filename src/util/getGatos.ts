@@ -1,7 +1,4 @@
 import axios from 'axios';
-const {db, insertRow, postTable} = require('../Models/db');
-const {queries} = require('../util/queries');
-const humps = require('humps');
 
 // Hace una peticion a la api para conseguir las fotos
 
