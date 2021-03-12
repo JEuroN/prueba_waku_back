@@ -4,7 +4,7 @@ CREATE TABLE public.cat_post (
                 post_category VARCHAR(40),
                 post_category_id INTEGER,
                 post_breed VARCHAR(40),
-                post_breed_id INTEGER,
+                post_breed_id VARCHAR,
                 post_origin VARCHAR(40),
                 post_url VARCHAR NOT NULL,
                 CONSTRAINT post_id PRIMARY KEY (post_id)
